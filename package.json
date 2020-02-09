@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "mongoose-1": "node src/db/mongoose.js"
   },
   "repository": {
@@ -19,8 +21,12 @@
   },
   "homepage": "https://github.com/KarlssonIvan/task-manager#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "mongodb": "^3.5.1",
     "mongoose": "^5.8.11",
     "validator": "^12.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
